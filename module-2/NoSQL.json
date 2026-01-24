@@ -1,0 +1,44 @@
+NoSQL Data Structure:
+
+{
+    "UserId": "1",
+    "FirstName": "Dan",
+    "LastName": "Fryer",
+    "Birthday": "11/3/1981",
+
+    "ROLES":[
+        {
+            "RoleId": "1",
+            "RoleName": "Admin"
+        },
+        {
+            "RoleId": "2",
+            "RoleName": "Viewer"
+        },
+        {
+            "RoleId": "3",
+            "RoleName": "User"
+        }
+    ],
+
+    "DEPENDENTS":[
+        {
+            "DependentId": "1",
+            "FirstName": "Beth",
+            "LastName": "Fryer",
+            "Relation": "Spouse"
+        },
+        {
+            "DependentId": "2",
+            "FirstName": "James",
+            "LastName": "Fryer",
+            "Relation": "Child"
+        },
+        {
+            "DependentId": "3",
+            "FirstName": "Ella",
+            "LastName": "Fryer",
+            "Relation": "Child"
+        }
+    ]
+}
