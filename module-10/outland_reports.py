@@ -75,7 +75,7 @@ def main():
                         re.rentalDatePurchase AS "Date Added to Inventory",
                         rs.rentalStatus AS "Rental Status"
                         FROM t_rentalequipment re
-                        JOIN t_rentalstatus rs ON rs.rentalStatusId = re.rentalStatusId
+                        JOIN t_rentalstatus rs ON rs.rentalStatusId = re.rentalId
                         WHERE rentalDatePurchase <= DATE_SUB(CURDATE(), INTERVAL 5 YEAR)""")
         rows = cursor.fetchall()
         PrintTables("Rental Equipment > 5 Years Old",cursor, rows)
